@@ -1,14 +1,16 @@
 # insame.space
+# insame.space
 
-My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Contentlayer](https://www.contentlayer.dev/) and deployed to [Vercel](https://vercel.com/).
+Portfolio website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Contentlayer](https://www.contentlayer.dev/) and deployed to [Vercel](https://vercel.com/).
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frdwz%2Finsame-space&demo-title=insame.space&demo-description=Portfolio%20built%20with%20Next.js%20and%20Contentlayer&demo-url=https%3A%2F%2Finsame.space&demo-image=https%3A%2F%2Finsame.space%2Fimages%2Finsame-space.png)
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frdwz%2Finsame-space&demo-title=insame.space&demo-description=Portfolio%20built%20with%20Next.js%20and%20Contentlayer&demo-url=https%3A%2F%2Finsame.space&demo-image=https%3A%2F%2Finsame.space%2Fimages%2Finsame-space.png)
 
 ## Running Locally
 
-```sh-session
-git clone https://github.com/chronark/chronark.com.git
-cd chronark.com
+```sh
+git clone https://github.com/rdwz/insame-space.git
+cd insame-space
 ```
 
 Create a `.env` file similar to [`.env.example`](https://github.com/chronark/chronark.com/blob/main/.env.example).
@@ -21,11 +23,16 @@ pnpm dev
 ```
 
 ## loning / Forking
+## loning / Forking
 
 Please remove all of my personal information (projects, images, etc.) before deploying your own version of this site.
 C
 
 ## Screenshots
+
+```sh
+pnpm i -g capture-website
+```
 
 ```sh
 capture-website https://angelnumber.one --launch-options='{"headless": "new"}' --output='public/images/angelnumber-one.webp' --overwrite --quality .65 --scaleFactor .72 --type webp
@@ -36,3 +43,8 @@ capture-website https://spiritual.codes --launch-options='{"headless": "new"}' -
 capture-website https://synchronicity.icu --launch-options='{"headless": "new"}' --output='public/images/synchronicity-icu.webp' --overwrite --quality .65 --scaleFactor .72 --type webp
 capture-website https://twinflame.tf  --launch-options='{"headless": "new"}' --output='public/images/twinflame-tf.webp' --overwrite --quality .65 --scaleFactor .72 --type webp
 ```
+
+## Aknowledgement
+
+- [chronark](http://chronark.com)
+- [capture-website](https://github.com/sindresorhus/capture-website#readme)
