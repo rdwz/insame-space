@@ -44,13 +44,15 @@ export const metadata: Metadata = {
 	},
 };
 const inter = LocalFont({
-	src: "../public/fonts/Inter-Regular.woff2",
+	src: "../public/fonts/Inter.var-subset.woff2",
 	variable: "--font-inter",
+  display: 'swap',
 });
 
 const calSans = LocalFont({
-	src: "../public/fonts/CalSans-SemiBold.woff2",
+	src: "../public/fonts/CalSans-SemiBold-subset.woff2",
 	variable: "--font-calsans",
+  display: 'swap',
 });
 
 export default function RootLayout({
