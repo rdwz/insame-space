@@ -1,5 +1,4 @@
 import "../global.css";
-import { Inter } from "@next/font/google";
 import LocalFont from "@next/font/local";
 import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
@@ -12,15 +11,14 @@ export const metadata: Metadata = {
 	description: "Full Stack Web Developer and founder of spiritual.codes",
 	openGraph: {
 		title: "insame.space",
-		description:
-			"Full Stack Web Developer and founder of spiritual.codes",
+		description: "Full Stack Web Developer and founder of spiritual.codes",
 		url: "https://insame.space",
 		siteName: "insame.space",
 		images: [
 			{
 				url: "https://insame.space/og.png",
-				width: 1920,
-				height: 1080,
+				width: 1200,
+				height: 630,
 			},
 		],
 		locale: "en-US",
@@ -45,8 +43,8 @@ export const metadata: Metadata = {
 		shortcut: "/favicon.png",
 	},
 };
-const inter = Inter({
-	subsets: ["latin"],
+const inter = LocalFont({
+	src: "../public/fonts/Inter-Regular.woff2",
 	variable: "--font-inter",
 });
 
