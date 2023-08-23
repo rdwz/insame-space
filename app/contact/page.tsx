@@ -1,8 +1,8 @@
 "use client";
-import { Icon } from '@iconify/react';
-import emailIcon from '@iconify/icons-line-md/email';
-import githubIcon from '@iconify/icons-line-md/github';
-import twitterXAlt from '@iconify/icons-line-md/twitter-x-alt';
+import { Icon } from "@iconify/react";
+import emailIcon from "@iconify/icons-line-md/email";
+import githubIcon from "@iconify/icons-line-md/github";
+import twitterXAlt from "@iconify/icons-line-md/twitter-x-alt";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";

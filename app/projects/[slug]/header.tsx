@@ -1,6 +1,6 @@
 "use client";
-import { Icon } from '@iconify/react';
-import arrowLeft from '@iconify/icons-line-md/arrow-left';
+import { Icon } from "@iconify/react";
+import arrowLeft from "@iconify/icons-line-md/arrow-left";
 import arrowSmallRight from "@iconify/icons-line-md/arrow-small-right";
 import githubIcon from "@iconify/icons-line-md/github";
 import twitterXAlt from "@iconify/icons-line-md/twitter-x-alt";
@@ -15,7 +15,6 @@ type Props = {
 		repository?: string;
 	};
 };
-export const Header: React.FC<Props> = ({ project }) => {
 export const Header: React.FC<Props> = ({ project }) => {
 	const ref = useRef<HTMLElement>(null);
 	const [isIntersecting, setIntersecting] = useState(true);
@@ -57,7 +56,7 @@ export const Header: React.FC<Props> = ({ project }) => {
 			>
 				<div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
 					<div className="flex justify-between gap-8">
-						<Link target="_blank" href="https://x.com/rdwz_">
+						<Link target="_blank" href="https://twitter.com/redwerkz">
 							<Icon
 								icon={twitterXAlt}
 								width="20"
@@ -91,7 +90,12 @@ export const Header: React.FC<Props> = ({ project }) => {
 								: "text-zinc-600 hover:text-zinc-900"
 						} `}
 					>
-						<Icon icon={arrowLeft} width="24" height="24" className="w-6 h-6 " />
+						<Icon
+							icon={arrowLeft}
+							width="24"
+							height="24"
+							className="w-6 h-6 "
+						/>
 					</Link>
 				</div>
 			</div>
@@ -110,7 +114,12 @@ export const Header: React.FC<Props> = ({ project }) => {
 						<div className="grid grid-cols-1 gap-y-6 gap-x-8 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
 							{links.map((link) => (
 								<Link target="_blank" key={link.label} href={link.href}>
-									{link.label}{" "}<Icon icon={arrowSmallRight} aria-hidden="true" className='inline'/>
+									{link.label}{" "}
+									<Icon
+										icon={arrowSmallRight}
+										className="inline"
+										aria-hidden="true"
+									/>
 								</Link>
 							))}
 						</div>

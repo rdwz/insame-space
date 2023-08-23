@@ -46,13 +46,13 @@ export const metadata: Metadata = {
 const inter = LocalFont({
 	src: "../public/fonts/Inter-Regular-subset.woff2",
 	variable: "--font-inter",
-  display: 'swap',
+	display: "swap",
 });
 
 const calSans = LocalFont({
 	src: "../public/fonts/CalSans-SemiBold-subset.woff2",
 	variable: "--font-calsans",
-  display: 'swap',
+	display: "swap",
 });
 
 export default function RootLayout({
