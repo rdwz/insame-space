@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 	},
 };
 const inter = LocalFont({
-	src: "../public/fonts/Inter.var-subset.woff2",
+	src: "../public/fonts/Inter-Regular-subset.woff2",
 	variable: "--font-inter",
   display: 'swap',
 });

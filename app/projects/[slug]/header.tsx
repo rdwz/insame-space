@@ -1,5 +1,10 @@
 "use client";
-import { ArrowLeft, Eye, Github, Twitter } from "lucide-react";
+import { Icon } from '@iconify/react';
+import arrowLeftCircle from '@iconify/icons-line-md/arrow-left-circle';
+import arrowSmallRight from "@iconify/icons-line-md/arrow-small-right";
+import eyeOutline from "@iconify/icons-mdi/eye-outline";
+import githubIcon from "@iconify/icons-line-md/github";
+import twitterXAlt from "@iconify/icons-line-md/twitter-x-alt";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -62,13 +67,21 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 									: "text-zinc-600 hover:text-zinc-900"
 							} `}
 						>
-							<Eye className="w-5 h-5" />{" "}
+							<Icon
+								icon={eyeOutline}
+								width="24"
+								height="24"
+								className="w-5 h-5"
+							/>{" "}
 							{Intl.NumberFormat("en-US", { notation: "compact" }).format(
 								views,
 							)}
 						</span>
-						<Link target="_blank" href="https://twitter.com/chronark_">
-							<Twitter
+						<Link target="_blank" href="https://twitter.com/redwerkz">
+							<Icon
+								icon={twitterXAlt}
+								width="20"
+								height="20"
 								className={`w-6 h-6 duration-200 hover:font-medium ${
 									isIntersecting
 										? " text-zinc-400 hover:text-zinc-100"
@@ -76,8 +89,11 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 								} `}
 							/>
 						</Link>
-						<Link target="_blank" href="https://github.com/chronark">
-							<Github
+						<Link target="_blank" href="https://github.com/rdwz">
+							<Icon
+								icon={githubIcon}
+								width="24"
+								height="24"
 								className={`w-6 h-6 duration-200 hover:font-medium ${
 									isIntersecting
 										? " text-zinc-400 hover:text-zinc-100"
@@ -95,7 +111,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 								: "text-zinc-600 hover:text-zinc-900"
 						} `}
 					>
-						<ArrowLeft className="w-6 h-6 " />
+						<Icon icon={arrowLeftCircle} width="24" height="24" className="w-6 h-6 " />
 					</Link>
 				</div>
 			</div>
@@ -114,7 +130,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 						<div className="grid grid-cols-1 gap-y-6 gap-x-8 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
 							{links.map((link) => (
 								<Link target="_blank" key={link.label} href={link.href}>
-									{link.label} <span aria-hidden="true">&rarr;</span>
+									{link.label}{" "}<Icon icon={arrowSmallRight} aria-hidden="true" />
 								</Link>
 							))}
 						</div>
