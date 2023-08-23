@@ -7,11 +7,11 @@ import { Article } from "./article";
 
 export const revalidate = 60;
 export default async function ProjectsPage() {
-	// rome-ignore lint/style/noNonNullAssertion: <explanation>
-  const  featured = allProjects.find((project) => project.slug === "spiritual-codes")!;
-	// rome-ignore lint/style/noNonNullAssertion: <explanation>
-	const top2 = allProjects.find((project) => project.slug === "synchronicity-icu")!;
-	// rome-ignore lint/style/noNonNullAssertion: <explanation>
+  // rome-ignore lint/style/noNonNullAssertion: <explanation>
+  const featured = allProjects.find((project) => project.slug === "spiritual-codes")!;
+  // rome-ignore lint/style/noNonNullAssertion: <explanation>
+  const top2 = allProjects.find((project) => project.slug === "synchronicity-icu")!;
+  // rome-ignore lint/style/noNonNullAssertion: <explanation>
 	const top3 = allProjects.find((project) => project.slug === "purpl-ink")!;
 	const sorted = allProjects
 		.filter((p) => p.published)
@@ -33,7 +33,7 @@ export default async function ProjectsPage() {
 			<div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
 				<div className="max-w-2xl mx-auto lg:mx-0">
 					<h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-						Projects
+						/projects
 					</h2>
 					<p className="mt-4 text-zinc-400">
 					 I respect your privacy. No personal data is or will be collected. If you like this practice, please support me by <a href="https://paypal.me/redwerkz" target="_blank" rel="noreferrer">one-time donation</a> (every amount helps).
@@ -81,7 +81,6 @@ export default async function ProjectsPage() {
 						{[top2, top3].map((project) => (
 							<Card key={project.slug}>
 								<Article project={project} />
-								<Article project={project} />
 							</Card>
 						))}
 					</div>
@@ -95,7 +94,6 @@ export default async function ProjectsPage() {
 							.map((project) => (
 								<Card key={project.slug}>
 									<Article project={project} />
-									<Article project={project} />
 								</Card>
 							))}
 					</div>
@@ -105,7 +103,6 @@ export default async function ProjectsPage() {
 							.map((project) => (
 								<Card key={project.slug}>
 									<Article project={project} />
-									<Article project={project} />
 								</Card>
 							))}
 					</div>
@@ -114,7 +111,6 @@ export default async function ProjectsPage() {
 							.filter((_, i) => i % 3 === 2)
 							.map((project) => (
 								<Card key={project.slug}>
-									<Article project={project} />
 									<Article project={project} />
 								</Card>
 							))}

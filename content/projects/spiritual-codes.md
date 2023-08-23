@@ -1,7 +1,7 @@
 ---
 title: spiritual.codes
 description: Determined to spread sparks of wisdom
-date: "2023-08-17"
+date: 2023-08-17
 published: true
 ---
 

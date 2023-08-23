@@ -41,7 +41,7 @@ capture-website https://insame.space --launch-options='{"headless": "new"}' --ou
 capture-website https://purpl.ink --launch-options='{"headless": "new"}' --output='public/images/purpl-ink.webp' --overwrite --quality .65 --scaleFactor .72 --type webp
 capture-website https://spiritual.codes --launch-options='{"headless": "new"}' --output='public/images/spiritual-codes.webp' --overwrite --quality .65 --scaleFactor .72 --type webp
 capture-website https://synchronicity.icu --launch-options='{"headless": "new"}' --output='public/images/synchronicity-icu.webp' --overwrite --quality .65 --scaleFactor .72 --type webp
-capture-website https://twinflame.tf  --launch-options='{"headless": "new"}' --output='public/images/twinflame-tf.webp' --overwrite --quality .65 --scaleFactor .72 --type webp
+capture-website https://twinflame.tf --launch-options='{"headless": "new"}' --output='public/images/twinflame-tf.webp' --overwrite --quality .65 --scaleFactor .72 --type webp
 ```
 
 ## Aknowledgement

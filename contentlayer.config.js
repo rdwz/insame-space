@@ -18,7 +18,7 @@ const computedFields = {
 
 export const Project = defineDocumentType(() => ({
 	name: "Project",
-	filePathPattern: "./projects/**/*.(md|mdx)",
+	filePathPattern: "./projects/**/*.md",
 	contentType: "mdx",
 
 	fields: {
@@ -35,9 +35,6 @@ export const Project = defineDocumentType(() => ({
 		},
 		date: {
 			type: "date",
-		},
-		url: {
-			type: "string",
 		},
 		repository: {
 			type: "string",
