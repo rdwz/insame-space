@@ -11,7 +11,7 @@
   "dependencies": {
     "@next/font": "^13.4.19",
     "@next/mdx": "^13.4.19",
-    "@types/node": "20.5.3",
+    "@types/node": "20.5.4",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "@upstash/redis": "^1.22.0",
@@ -31,11 +31,9 @@
   },
   "devDependencies": {
     "@iconify/icons-line-md": "^1.2.24",
-    "@iconify/icons-mdi": "^1.2.47",
-    "@iconify/icons-mdi-light": "^1.2.5",
     "@iconify/react": "^4.1.1",
-    "@opentelemetry/api": "^1.4.1",
-    "@tailwindcss/line-clamp": "^0.4.2",
+    "@opentelemetry/api": "1.4.1",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.15",
     "postcss": "^8.4.28",

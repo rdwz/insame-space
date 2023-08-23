@@ -21,8 +21,8 @@ dependencies:
     specifier: ^13.4.19
     version: 13.4.19
   '@types/node':
-    specifier: 20.5.3
-    version: 20.5.3
+    specifier: 20.5.4
+    version: 20.5.4
   '@types/react':
     specifier: 18.2.21
     version: 18.2.21
@@ -76,12 +76,6 @@ devDependencies:
   '@iconify/icons-line-md':
     specifier: ^1.2.24
     version: 1.2.24
-  '@iconify/icons-mdi':
-    specifier: ^1.2.47
-    version: 1.2.47
-  '@iconify/icons-mdi-light':
-    specifier: ^1.2.5
-    version: 1.2.5
   '@iconify/react':
     specifier: ^4.1.1
     version: 4.1.1(react@18.2.0)
@@ -89,7 +83,7 @@ devDependencies:
     specifier: 1.4.1
     version: 1.4.1
   '@tailwindcss/line-clamp':
-    specifier: ^0.4.2
+    specifier: ^0.4.4
     version: 0.4.4(tailwindcss@3.3.3)
   '@tailwindcss/typography':
     specifier: ^0.5.9
@@ -551,7 +545,7 @@ packages:
     engines: {node: ^8.13.0 || >=10.10.0}
     dependencies:
       '@grpc/proto-loader': 0.7.9
-      '@types/node': 20.5.3
+      '@types/node': 20.5.4
     dev: false
 
   /@grpc/proto-loader@0.7.9:
@@ -567,18 +561,6 @@ packages:
 
   /@iconify/icons-line-md@1.2.24:
     resolution: {integrity: sha512-Yjqhjg2EJwKn9Tyvh6zf15uJIFmvN5fAy3prF9xkpI6w7O9geE/XuhtzJqAJH2vFNN+6qaVnC6N+aK4k3OFh8w==}
-    dependencies:
-      '@iconify/types': 2.0.0
-    dev: true
-
-  /@iconify/icons-mdi-light@1.2.5:
-    resolution: {integrity: sha512-8v8af/vCChwjhc+grZJnsPecT4Al01ydxnH8EeOSXfKE9CfrL4QSXAg6q+15hRIfciSIcBV1ZaAm9I31Frgo8w==}
-    dependencies:
-      '@iconify/types': 2.0.0
-    dev: true
-
-  /@iconify/icons-mdi@1.2.47:
-    resolution: {integrity: sha512-QpiQxBFOnLqmGr2t+aTxFgfPLu1p6TNvRlrx17a962FJPdhOtMcEzpSOjFUHeCs8DVOumtFcKxxhW3bvzZ/96Q==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -1122,8 +1104,8 @@ packages:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
     dev: false
 
-  /@types/node@20.5.3:
-    resolution: {integrity: sha512-ITI7rbWczR8a/S6qjAW7DMqxqFMjjTo61qZVWJ1ubPvbIQsL5D/TvwjYEalM8Kthpe3hTzOGrF2TGbAu2uyqeA==}
+  /@types/node@20.5.4:
+    resolution: {integrity: sha512-Y9vbIAoM31djQZrPYjpTLo0XlaSwOIsrlfE3LpulZeRblttsLQRFRlBAppW0LOxyT3ALj2M5vU1ucQQayQH3jA==}
     dev: false
 
   /@types/parse5@6.0.3:
@@ -1279,7 +1261,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001522
-      electron-to-chromium: 1.4.499
+      electron-to-chromium: 1.4.500
       node-releases: 2.0.13
       update-browserslist-db: 1.0.11(browserslist@4.21.10)
     dev: true
@@ -1474,8 +1456,8 @@ packages:
     resolution: {integrity: sha512-+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==}
     dev: true
 
-  /electron-to-chromium@1.4.499:
-    resolution: {integrity: sha512-0NmjlYBLKVHva4GABWAaHuPJolnDuL0AhV3h1hES6rcLCWEIbRL6/8TghfsVwkx6TEroQVdliX7+aLysUpKvjw==}
+  /electron-to-chromium@1.4.500:
+    resolution: {integrity: sha512-P38NO8eOuWOKY1sQk5yE0crNtrjgjJj6r3NrbIKtG18KzCHmHE2Bt+aQA7/y0w3uYsHWxDa6icOohzjLJ4vJ4A==}
     dev: true
 
   /emoji-regex@8.0.0:
@@ -3008,7 +2990,7 @@ packages:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 20.5.3
+      '@types/node': 20.5.4
       long: 5.2.3
     dev: false
 
