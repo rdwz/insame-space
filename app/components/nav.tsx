@@ -1,5 +1,6 @@
 "use client";
-import { ArrowLeft } from "lucide-react";
+import { Icon } from "@iconify/react";
+import arrowLeft from "@iconify/icons-line-md/arrow-left";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -32,13 +33,13 @@ export const Navigation: React.FC = () => {
 							href="/projects"
 							className="duration-200 text-zinc-400 hover:text-zinc-100"
 						>
-							Projects
+							/projects
 						</Link>
 						<Link
 							href="/contact"
 							className="duration-200 text-zinc-400 hover:text-zinc-100"
 						>
-							Contact
+							/contact
 						</Link>
 					</div>
 
@@ -46,7 +47,7 @@ export const Navigation: React.FC = () => {
 						href="/"
 						className="duration-200 text-zinc-300 hover:text-zinc-100"
 					>
-						<ArrowLeft className="w-6 h-6 " />
+						<Icon icon={arrowLeft} className="w-6 h-6" />
 					</Link>
 				</div>
 			</div>

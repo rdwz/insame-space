@@ -1,26 +1,29 @@
 "use client";
-import { Github, Mail, Twitter } from "lucide-react";
+import { Icon } from '@iconify/react';
+import emailIcon from '@iconify/icons-line-md/email';
+import githubIcon from '@iconify/icons-line-md/github';
+import twitterXAlt from '@iconify/icons-line-md/twitter-x-alt';
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 
 const socials = [
 	{
-		icon: <Twitter size={20} />,
-		href: "https://twitter.com/redwerkz",
-		label: "Twitter",
-		handle: "@redwerkz",
+		icon: <Icon icon={twitterXAlt} width="20" height="20" />,
+		href: "https://x.com/rdwz_",
+		label: "X (Twitter)",
+		handle: "@rdwz_",
 	},
 	{
-		icon: <Mail size={20} />,
+		icon: <Icon icon={emailIcon} width="24" height="24" />,
 		href: "mailto:hi@spiritual.codes",
 		label: "Email",
 		handle: "hi@spiritual.codes",
 	},
 	{
-		icon: <Github size={20} />,
+		icon: <Icon icon={githubIcon} width="24" height="24" />,
 		href: "https://github.com/rdwz",
-		label: "Github",
+		label: "GitHub",
 		handle: "rdwz",
 	},
 ];
