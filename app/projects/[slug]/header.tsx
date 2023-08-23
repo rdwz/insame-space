@@ -74,11 +74,6 @@ export const Header: React.FC<Props> = ({ project }) => {
 								icon={githubIcon}
 								width="24"
 								height="24"
-						<Link target="_blank" href="https://github.com/rdwz">
-							<Icon
-								icon={githubIcon}
-								width="24"
-								height="24"
 								className={`w-6 h-6 duration-200 hover:font-medium ${
 									isIntersecting
 										? " text-zinc-400 hover:text-zinc-100"
