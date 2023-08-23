@@ -1,12 +1,21 @@
 {
-  "linter": {
-    "enabled": true,
-    "rules": {
-      "recommended": true
-    },
-    "ignore": ["node_modules", ".next", "dist"]
-  },
-  "formatter": {
-    "ignore": ["node_modules", ".next", "dist"]
-  }
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		},
+		"ignore": ["node_modules", ".next", "dist"]
+	},
+	"formatter": {
+		"ignore": ["node_modules", ".next", "dist"]
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single",
+			"semicolons": "asNeeded"
+		}
+	}
 }
