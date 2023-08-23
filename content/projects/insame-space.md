@@ -2,8 +2,7 @@
 title: insame.space
 description: The website you're looking at
 repository: rdwz/insame-space
-url: https://insame.space
-date: 2023-03-28
+date: "2023-03-28"
 published: true
 ---
 

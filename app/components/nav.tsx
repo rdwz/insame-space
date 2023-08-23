@@ -47,7 +47,7 @@ export const Navigation: React.FC = () => {
 						href="/"
 						className="duration-200 text-zinc-300 hover:text-zinc-100"
 					>
-						<Icon icon={arrowLeft} className="w-6 h-6" />
+						<Icon icon={arrowLeft} width="1.5rem" height="24" className="w-6 h-6" />
 					</Link>
 				</div>
 			</div>

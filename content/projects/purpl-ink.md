@@ -2,7 +2,6 @@
 title: purpl.ink
 description: Newsletter
 date: "2023-08-12"
-url: https://purpl.ink
 published: true
 ---
 

@@ -4,23 +4,14 @@ import { allProjects } from "contentlayer/generated";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { Article } from "./article";
-import { Redis } from "@upstash/redis";
-
-const redis = Redis.fromEnv();
 
 export const revalidate = 60;
 export default async function ProjectsPage() {
-	const views = (
-		await redis.mget<number[]>(
-			...allProjects.map((p) => ["pageviews", "projects", p.slug].join(":")),
-		)
-	).reduce((acc, v, i) => {
-		acc[allProjects[i].slug] = v ?? 0;
-		return acc;
-	}, {} as Record<string, number>);
-
-	const featured = allProjects.find((project) => project.slug === "spiritual-codes")!;
+	// rome-ignore lint/style/noNonNullAssertion: <explanation>
+  const  featured = allProjects.find((project) => project.slug === "spiritual-codes")!;
+	// rome-ignore lint/style/noNonNullAssertion: <explanation>
 	const top2 = allProjects.find((project) => project.slug === "synchronicity-icu")!;
+	// rome-ignore lint/style/noNonNullAssertion: <explanation>
 	const top3 = allProjects.find((project) => project.slug === "purpl-ink")!;
 	const sorted = allProjects
 		.filter((p) => p.published)
@@ -45,7 +36,7 @@ export default async function ProjectsPage() {
 						Projects
 					</h2>
 					<p className="mt-4 text-zinc-400">
-						Some of the projects are from work and some are on my own time.
+					 I respect your privacy. No personal data is or will be collected. If you like this practice, please support me by <a href="https://paypal.me/redwerkz" target="_blank" rel="noreferrer">one-time donation</a> (every amount helps).
 					</p>
 				</div>
 				<div className="w-full h-px bg-zinc-800" />
@@ -89,7 +80,7 @@ export default async function ProjectsPage() {
 					<div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
 						{[top2, top3].map((project) => (
 							<Card key={project.slug}>
-								<Article project={project} views={views[project.slug] ?? 0} />
+								<Article project={project} />
 							</Card>
 						))}
 					</div>
@@ -102,7 +93,7 @@ export default async function ProjectsPage() {
 							.filter((_, i) => i % 3 === 0)
 							.map((project) => (
 								<Card key={project.slug}>
-									<Article project={project} views={views[project.slug] ?? 0} />
+									<Article project={project} />
 								</Card>
 							))}
 					</div>
@@ -111,7 +102,7 @@ export default async function ProjectsPage() {
 							.filter((_, i) => i % 3 === 1)
 							.map((project) => (
 								<Card key={project.slug}>
-									<Article project={project} views={views[project.slug] ?? 0} />
+									<Article project={project} />
 								</Card>
 							))}
 					</div>
@@ -120,7 +111,7 @@ export default async function ProjectsPage() {
 							.filter((_, i) => i % 3 === 2)
 							.map((project) => (
 								<Card key={project.slug}>
-									<Article project={project} views={views[project.slug] ?? 0} />
+									<Article project={project} />
 								</Card>
 							))}
 					</div>

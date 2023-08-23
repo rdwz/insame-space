@@ -1,6 +1,6 @@
 "use client";
 import { Icon } from '@iconify/react';
-import arrowLeftCircle from '@iconify/icons-line-md/arrow-left-circle';
+import arrowLeft from '@iconify/icons-line-md/arrow-left';
 import arrowSmallRight from "@iconify/icons-line-md/arrow-small-right";
 import githubIcon from "@iconify/icons-line-md/github";
 import twitterXAlt from "@iconify/icons-line-md/twitter-x-alt";
@@ -16,20 +16,21 @@ type Props = {
 	};
 };
 export const Header: React.FC<Props> = ({ project }) => {
+export const Header: React.FC<Props> = ({ project }) => {
 	const ref = useRef<HTMLElement>(null);
 	const [isIntersecting, setIntersecting] = useState(true);
 
 	const links: { label: string; href: string }[] = [];
 	if (project.repository) {
 		links.push({
-			label: "GitHub",
+			label: "Source",
 			href: `https://github.com/${project.repository}`,
 		});
 	}
-	if (project.url) {
+	if (project.title) {
 		links.push({
 			label: "Website",
-			href: project.url,
+			href: `https://${project.title}`,
 		});
 	}
 	useEffect(() => {
@@ -56,7 +57,7 @@ export const Header: React.FC<Props> = ({ project }) => {
 			>
 				<div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
 					<div className="flex justify-between gap-8">
-						<Link target="_blank" href="https://twitter.com/redwerkz">
+						<Link target="_blank" href="https://x.com/rdwz_">
 							<Icon
 								icon={twitterXAlt}
 								width="20"
@@ -95,8 +96,7 @@ export const Header: React.FC<Props> = ({ project }) => {
 								: "text-zinc-600 hover:text-zinc-900"
 						} `}
 					>
-						<Icon icon={arrowLeftCircle} width="24" height="24" className="w-6 h-6 " />
-						<Icon icon={arrowLeftCircle} width="24" height="24" className="w-6 h-6 " />
+						<Icon icon={arrowLeft} width="24" height="24" className="w-6 h-6 " />
 					</Link>
 				</div>
 			</div>
@@ -115,8 +115,7 @@ export const Header: React.FC<Props> = ({ project }) => {
 						<div className="grid grid-cols-1 gap-y-6 gap-x-8 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
 							{links.map((link) => (
 								<Link target="_blank" key={link.label} href={link.href}>
-									{link.label}{" "}<Icon icon={arrowSmallRight} aria-hidden="true" />
-									{link.label}{" "}<Icon icon={arrowSmallRight} aria-hidden="true" />
+									{link.label}{" "}<Icon icon={arrowSmallRight} aria-hidden="true" className='inline'/>
 								</Link>
 							))}
 						</div>

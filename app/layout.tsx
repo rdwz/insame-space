@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 		siteName: "insame.space",
 		images: [
 			{
-				url: "https://insame.space/og.png",
+				url: "https://insame.space/og.jpg",
 				width: 1200,
 				height: 630,
 			},

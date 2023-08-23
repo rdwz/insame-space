@@ -1,8 +1,7 @@
 ---
 title: astrological.guru
 description: Celestial bodies and zodiac signs
-url: https://astrological.guru
-date: 2023-07-20
+date: "2023-07-20"
 published: true
 ---
 

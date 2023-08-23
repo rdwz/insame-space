@@ -1,7 +1,6 @@
 ---
 title: soul.computer
 description: coming soon
-url: https://soul.computer
 published: true
 ---
 
