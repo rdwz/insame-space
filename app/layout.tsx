@@ -6,19 +6,19 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
 	title: {
-		default: "chronark.com",
-		template: "%s | chronark.com",
+		default: "insame.space",
+		template: "%s | insame.space",
 	},
-	description: "Software engineer at upstash.com and founder of planetfall.io",
+	description: "Full Stack Web Developer and founder of spiritual.codes",
 	openGraph: {
-		title: "chronark.com",
+		title: "insame.space",
 		description:
-			"Software engineer at upstash.com and founder of planetfall.io",
-		url: "https://chronark.com",
-		siteName: "chronark.com",
+			"Full Stack Web Developer and founder of spiritual.codes",
+		url: "https://insame.space",
+		siteName: "insame.space",
 		images: [
 			{
-				url: "https://chronark.com/og.png",
+				url: "https://insame.space/og.png",
 				width: 1920,
 				height: 1080,
 			},
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 		},
 	},
 	twitter: {
-		title: "Chronark",
+		title: "Insame",
 		card: "summary_large_image",
 	},
 	icons: {
@@ -51,7 +51,7 @@ const inter = Inter({
 });
 
 const calSans = LocalFont({
-	src: "../public/fonts/CalSans-SemiBold.ttf",
+	src: "../public/fonts/CalSans-SemiBold.woff2",
 	variable: "--font-calsans",
 });
 
