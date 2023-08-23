@@ -5,4 +5,4 @@ date: "2023-07-20"
 published: true
 ---
 
-![screenshot](../../images/astrological-guru.webp)
+![screenshot](/images/astrological-guru.webp)

@@ -6,7 +6,7 @@ date: 2023-03-28
 published: true
 ---
 
-![screenshot](../../images/insame-space.webp)
+![screenshot](/images/insame-space.webp)
 
 Stack: Next, Vercel
 

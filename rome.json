@@ -1,6 +1,6 @@
 {
 	"organizeImports": {
-		"enabled": true
+		"enabled": false
 	},
 	"linter": {
 		"enabled": true,
@@ -14,8 +14,8 @@
 	},
 	"javascript": {
 		"formatter": {
-			"quoteStyle": "single",
-			"semicolons": "asNeeded"
+			"quoteStyle": "double",
+			"semicolons": "always"
 		}
 	}
 }

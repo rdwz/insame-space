@@ -5,4 +5,4 @@ date: "2023-07-21"
 published: true
 ---
 
-![screenshot](../../images/angelnumber-one.webp)
+![screenshot](/images/angelnumber-one.webp)

@@ -1,5 +1,5 @@
-import { Card } from '../components/card'
-import { Navigation } from '../components/nav'
+import { Card } from '@/app/components/card'
+import { Navigation } from '@/app/components/nav'
 import { Article } from './article'
 import { allProjects } from 'contentlayer/generated'
 import Link from 'next/link'
