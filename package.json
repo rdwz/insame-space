@@ -23,7 +23,7 @@
     "react-dom": "18.2.0",
     "react-wrap-balancer": "^1.1.0",
     "rehype-autolink-headings": "^6.1.1",
-    "rehype-pretty-code": "^0.10.0",
+    "rehype-pretty-code": "^0.14.0",
     "rehype-slug": "^5.1.0",
     "remark-gfm": "^3.0.1",
     "typescript": "5.1.6"
